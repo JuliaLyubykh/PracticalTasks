@@ -8,7 +8,7 @@
 # Файлы объединяются в том порядке, в котором указаны
 # Если программа была запущена без аргументов, вывести сообщение об ошибке
 
-def combine_files(*file_names):
+def combined_files(*file_names):
     if len(file_names) == 0:
         print("Ошибка: файлы не указаны.")
     else:
@@ -21,4 +21,4 @@ def combine_files(*file_names):
                 print(f"Файл {file_name} не открывается.")
         print(combined_content)
 
-combine_files(input("Введите название первого файла: "), input("Введите название второго файла: "))
+combined_files(input("Введите название первого файла: "), input("Введите название второго файла: "))
