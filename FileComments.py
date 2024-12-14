@@ -8,7 +8,7 @@
 
 # Имена файла назначения и файла источника запрашиваются у пользователя
 
-def remove_comments(file_name, new_file_name):
+def remove(file_name, new_file_name):
     try:
         with open(file_name, "r") as file:
             content = file.readlines()
@@ -23,4 +23,4 @@ def remove_comments(file_name, new_file_name):
     
 file_name = input('Введите имя исходного файла: ')
 new_file_name = input('Введите имя файла для вывода: ')
-remove_comments(file_name, new_file_name)
+remove(file_name, new_file_name)
