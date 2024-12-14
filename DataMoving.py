@@ -8,7 +8,7 @@
 # Каждая строка должна начинаться с ее номера, двоеточия и пробела, а после
 # должен идти текст строки из исходного файла.
 
-def add_line_numbers(file_name, new_file_name):
+def add_numbers(file_name, new_file_name):
     with open(file_name, "r") as file:
         content = file.readlines()
 
@@ -19,4 +19,4 @@ def add_line_numbers(file_name, new_file_name):
 file_name = input("Введите имя исходного файла: ")
 new_file_name = input("Введите имя целевого файла: ")
 
-add_line_numbers(file_name, new_file_name)
+add_numbers(file_name, new_file_name)
