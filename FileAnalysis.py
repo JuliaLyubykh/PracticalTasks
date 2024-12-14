@@ -7,7 +7,7 @@
 
 import gdown
 
-url = 'https://drive.google.com/drive/u/1/folders/1mczhXrDys25ylY3btR_d8_SN9RkpGwFN'
+url = ''
 gdown.download_folder(url, quiet = False, remaining_ok = True)
 
 # Чтение файлов
@@ -15,7 +15,7 @@ gdown.download_folder(url, quiet = False, remaining_ok = True)
 from glob import glob
 
 
-all_files = glob('data/problem_*.md')
+all_files = glob('data_*.md')
 with open(filename, 'r') as f:
     data = f.read()
 
